@@ -1,0 +1,26 @@
+{
+  "name": "easy-datetime-fmt",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "date-formatting",
+    "datetime",
+    "time-formatting",
+    "easy-formatter"
+  ],
+  "author": "Saqib Bedar",
+  "license": "MIT",
+  "description": "A simple JavaScript library for formatting dates and time.",
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
