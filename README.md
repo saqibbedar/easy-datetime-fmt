@@ -2,10 +2,7 @@
 
 Easy, simple date and time formatter.
 
-
-[![NPM Version][npm-version-image]][npm-url]
-[![NPM Install Size][npm-install-size-image]][npm-install-size-url]
-[![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+[![install size](https://packagephobia.com/badge?p=easy-datetime-fmt)](https://packagephobia.com/result?p=easy-datetime-fmt) 
 
 ## Table of Contents
 
@@ -98,11 +95,3 @@ Contributions are welcome! To contribute to this project, please follow these gu
 ## License
 
   This project is licensed under the [MIT License](LICENSE).
-
-
-[npm-downloads-image]: https://badgen.net/npm/dm/easy-datetime-fmt
-[npm-downloads-url]: https://npmcharts.com/compare/easy-datetime-fmt?minimal=true
-[npm-install-size-image]: https://badgen.net/packagephobia/install/easy-datetime-fmt
-[npm-install-size-url]: https://packagephobia.com/result?p=easy-datetime-fmt
-[npm-url]: https://npmjs.org/package/easy-datetime-fmt
-[npm-version-image]: https://badgen.net/npm/v/easy-datetime-fmt
