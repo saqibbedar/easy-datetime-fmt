@@ -13,8 +13,9 @@ Easy, simple date and time formatter.
 | 3.   | [Usage](#usage) | Basic usage examples of the functions provided by the package. |
 | 4.    | [Features](#features) | Key features of the package. |
 | 5.    | [More Examples](#more-examples) | Additional usage scenarios and examples. |
-| 6.    | [Contributing](#contributing) | Guidelines for contributing to the project. |
-| 7.    | [License](#license) | Licensing information for the package. |
+| 6.    | [Error Handling](#error-handling) | Common errors and how to handle them. |
+| 7.    | [Contributing](#contributing) | Guidelines for contributing to the project. |
+| 8.    | [License](#license) | Licensing information for the package. |
 
 ## Description
 
@@ -83,6 +84,41 @@ console.log(formatDateTime(createdAt)); // Output: 'Aug 26, 2024, 4:30 PM'
 console.log(formatDate(createdAt));    // Output: 'Aug 26, 2024'
 console.log(formatTime(createdAt));    // Output: '4:30 PM'
 ```
+
+## Error Handling
+
+### Common Errors
+
+1. TypeError: date.getMonth is not a function
+
+    * Cause: This error occurs when a non-Date object is passed to the formatting functions. For example, passing a timestamp or a string instead of a Date object.
+    * Solution: Ensure that you pass a valid Date object to the functions. For instance, use new Date() to create a Date object from a timestamp.
+
+    **Incorrect Usage:**
+    ```js
+      const formattedDate = formatDateTime(Date.now()); // Error
+    ```
+
+    **Correct Usage:**
+    ```js
+      const now = new Date();
+      const formattedDate = formatDateTim(now); // No Error```
+
+1. TypeError: Date.now is not a constructor
+
+    * Cause: This error happens when Date.now is mistakenly used with the new keyword.
+    * Solution: Use Date.now() to get the current timestamp in milliseconds and then create a Date object if needed.
+
+    **Incorrect Usage:**
+    ```js
+      const date = new Date(Date.now()); // This is correct, but might be confusing
+    ```
+
+    **Correct Usage:**
+    ```js
+      const date = new Date(); // Creates a new Date object for the current date and time
+      ```
+
 
 ## Contributing
 
